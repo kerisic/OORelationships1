@@ -27,6 +27,6 @@ class Password
   end
 
   def correct?(candidate_password)
-    @password = candidate_password
+    @password == candidate_password
   end
 end
