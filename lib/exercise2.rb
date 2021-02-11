@@ -7,7 +7,7 @@ class User
   end
 
   def authenticate(candidate_password)
-    @password.correct(candidate_password)? ? true : false
+    @password.correct?(candidate_password)
   end
 
   def profile
